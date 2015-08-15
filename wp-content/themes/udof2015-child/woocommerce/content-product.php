@@ -47,25 +47,24 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
 	<a href="<?php the_permalink(); ?>">
-
+        <h3><i class="fa fa-graduation-cap"></i> <?php the_title(); ?></h3>
 		<?php
 			/**
 			 * woocommerce_before_shop_loop_item_title hook
-			 *
+			 *   
 			 * @hooked woocommerce_show_product_loop_sale_flash - 10
 			 * @hooked woocommerce_template_loop_product_thumbnail - 10
 			 */
 			do_action( 'woocommerce_before_shop_loop_item_title' );
 		?>
-
-		<h3><?php the_title(); ?></h3>
-      <!-- CUSTOM FIELDS BY - GUILHERME WP & JAVALI DIGITAL -->
+        <!-- CUSTOM FIELDS BY - GUILHERME WP & JAVALI DIGITAL -->
+        <div class="title-pdt">      
                     <!-- CAMPO - INICIO -->
                                         <?php $inicio = get_post_custom_values( 'inicio' ); ?>
                                     <?php if( !empty($inicio) ) : ?>
                                 <div class="course-details-show">
                                     <ul>
-                                        <li class="course-details-custom-show">Início: <?php echo $inicio[0]; ?><i class="fa fa-calendar"></i></li>
+                                        <li class="course-details-custom-show"><i class="fa fa-calendar"></i> Início: <?php echo $inicio[0]; ?></li>
                                     </ul>
                                 </div><!-- end INICIO -->
                                     <?php endif; ?>
@@ -74,7 +73,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
                                     <?php if( !empty($duracao) ) : ?>
                                 <div class="course-details-show">
                                     <ul>
-                                        <li class="course-details-custom-show">Duração: <?php echo $duracao[0]; ?><i class="fa fa-tachometer"></i></li>
+                                        <li class="course-details-custom-show"><i class="fa fa-tachometer"></i> Duração: <?php echo $duracao[0]; ?></li>
                                     </ul>
                                 </div><!-- end DURACAO -->
                                     <?php endif; ?>
@@ -83,7 +82,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
                                     <?php if( !empty($carga_horaria) ) : ?>
                                 <div class="course-details-show">
                                     <ul>
-                                        <li class="course-details-custom-show">Carga Horária: <?php echo $carga_horaria[0]; ?><i class="fa fa-clock-o"></i></li>
+                                        <li class="course-details-custom-show"><i class="fa fa-clock-o"></i> Carga Horária: <?php echo $carga_horaria[0]; ?></li>
                                     </ul>
                                 </div><!-- end CARGA HORARIA -->
                                     <?php endif; ?>
@@ -92,11 +91,14 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
                                     <?php if( !empty($formato) ) : ?>
                                 <div class="course-details-show">
                                     <ul>
-                                        <li class="course-details-custom-show">Formato: <?php echo $formato[0]; ?><i class="fa fa-wifi"></i></li>
+                                        <li class="course-details-custom-show"><i class="fa fa-wifi"></i> Formato: <?php echo $formato[0]; ?></li>
                                     </ul>
                                 </div><!-- end FORMATO-->
                                     <?php endif; ?>
                         <!-- F I M *** CUSTOM FIELDS BY - GUILHERME WP & JAVALI DIGITAL *** -->
+             
+                        </div>
+
 		<?php
 			/**
 			 * woocommerce_after_shop_loop_item_title hook

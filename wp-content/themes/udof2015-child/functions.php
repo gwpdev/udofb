@@ -16,4 +16,5 @@ function gwp_widgets_init() {
 
 }
 add_action( 'widgets_init', 'gwp_widgets_init' );
+	
 ?>
