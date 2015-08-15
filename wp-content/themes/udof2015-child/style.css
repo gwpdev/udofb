@@ -1,0 +1,35 @@
+/*
+
+Theme Name: udof2015-Child
+
+Theme URI: http://guilhermewp.com.br
+
+Description: Versão 2 do Tema para Udof - @Via JavaliDigial
+
+Author: Guilherme Fonseca | Wordpress Developer
+
+Author URI: http://guilhermewp.com.br
+
+Template: udof2015
+
+Version: 1.0.0
+
+*/
+@import url("../udof2015/style.css");
+/***********************PRODUTOS HOME*****************************/
+.course-details-show
+{
+width: 47%;
+float: right;
+
+}
+.course-details-show {font-size: 12px;}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price, .woocommerce ul.products li.product .price del, .woocommerce-page ul.products li.product .price del
+{width: 40%;
+float: right;
+display: none;
+}
+.woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {background-color: #fff;}
+/**********PÁGINA DE PRODUTOS - SINGLE**************/
+.woocommerce div.product {width: 80%; float: left;}
+.sidebar-loja {width: 19%; float: right;}
