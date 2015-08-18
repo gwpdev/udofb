@@ -9,7 +9,7 @@
 				while ( have_posts() ) : the_post();
 					$post_format = et_pb_post_format(); ?>
 
-					<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post' ); ?>>
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'et_pb_post_single' ); ?>>
 
 				<?php
 					$thumb = '';
@@ -43,10 +43,11 @@
 				<?php if ( ! in_array( $post_format, array( 'link', 'audio', 'quote', 'gallery' ) ) ) : ?>
 					<?php if ( ! in_array( $post_format, array( 'link', 'audio' ) ) ) : ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<h5><span class="cat-single-page"><?php the_category(); ?></span></h5>
 					<?php endif; ?>
 
 					<?php
-						et_divi_post_meta();
+						//et_divi_post_meta();
 
 						if ( 'on' !== et_get_option( 'divi_blog_style', 'false' ) || ( is_search() && ( 'on' === get_post_meta( get_the_ID(), '_et_pb_use_builder', true ) ) ) )
 							truncate_post( 270 );

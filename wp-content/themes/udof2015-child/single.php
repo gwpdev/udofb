@@ -9,6 +9,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 ?>
 
 <div id="main-content">
+<div class="top-single">
+<h4><span class="cat-single"><?php the_category(); ?></span></h4>
+</div>
 	<div class="container">
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
@@ -19,11 +22,11 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<?php if ( ( 'off' !== $show_default_title && $is_page_builder_used ) || ! $is_page_builder_used ) { ?>
 						<div class="et_post_meta_wrapper">
 							<h1><?php the_title(); ?></h1>
-
+							
 						<?php
 							if ( ! post_password_required() ) :
 
-								et_divi_post_meta();
+								//et_divi_post_meta();
 
 								$thumb = '';
 
