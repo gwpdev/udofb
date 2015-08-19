@@ -68,6 +68,19 @@ get_header( 'shop' ); ?>
                                     </ul>
                                 </div><!-- end FORMATO-->
                                     <?php endif; ?>
+                                    <div class="valor-reais">
+                <span class="valor-reais-date">FORMAS DE PAGAMENTO:</span>
+                <ul class="valor-reais-list">
+                    <li>»  Boleto bancário (à vista com 5% de desconto ou em até 3 vezes)</li>
+                    <li>»  Cartão de crédito (à vista ou em até 6 vezes)</li>
+                </ul>
+                <ul class="webdoor-box-summary-payment-icons">
+                    <li><img src="http://ead.universidadedofutebol.com.br/wp-content/themes/curso-uf-theme/images/icon-summary-payment-boleto.png" alt="Boleto Bancário"></li>
+                    <li><img src="http://ead.universidadedofutebol.com.br/wp-content/themes/curso-uf-theme/images/icon-summary-payment-visa.png" alt="Cartão de Crédito - Visa"></li>
+                    <li><img src="http://ead.universidadedofutebol.com.br/wp-content/themes/curso-uf-theme/images/icon-summary-payment-master.png" alt="Cartão de Crédito - MasterCard"></li>
+                    <li><img src="http://ead.universidadedofutebol.com.br/wp-content/themes/curso-uf-theme/images/icon-summary-payment-paypal.png" alt="PayPal"></li>                                   
+                </ul>       
+            </div>
                         <!-- F I M *** CUSTOM FIELDS BY - GUILHERME WP & JAVALI DIGITAL *** -->
                         <?php dynamic_sidebar( 'loja_right_1' ); ?>
                     <?php do_action('woocommerce_sidebar'); ?>

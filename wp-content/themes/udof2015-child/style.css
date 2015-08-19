@@ -86,6 +86,7 @@ width: 100%!important;
 	box-shadow: 1px 1px 1px #ccc;
 	border-bottom: 4px solid #16a085;
 }
+
 /**********NOSSOS CURSOS - PAGE***************/
 /**********NOSSOS CURSOS - HEADER***************/
 .et_pb_gutters3 .et_pb_column_1_2, .et_pb_gutters3.et_pb_row .et_pb_column_1_2 {overflow: hidden;}
@@ -113,3 +114,100 @@ article.post img { float: left; max-width: 30%; margin: 0em 1.4em 1.0em 0em; }
     .et_pb_post h2 {margin-top: 0px;}
 p.post-meta > a {display: block; width: 84px; background-color: #16a085!important; color: #fff!important; padding: 5px; font-weight: bold; box-shadow: 1px 1px 1px #222; margin: 9px 0px 0px 0px;}
 .et_pb_post_single {float: left; box-shadow: 1px 1px 1px #ccc; margin-bottom: 50px;}
+
+/***********SINGLE-PRODUCTS****************/
+.woocommerce div.product form.cart .button {
+    background-color: #fc630e;
+    color: #fff; 
+}
+.entry-summary p.price span {color: #fc630e; font-weight: bold;}
+#tab-description > div > div > div > p > a {
+	background-color: #6dab3c;
+	width: 100%;
+	color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+	box-shadow: 0 5px 0 #53812d;
+    margin-bottom: 5px;
+}
+#tab-description > div > div > div > p > span {display: none;}
+#tab-description > div > div > div > p {padding: 0px!important; border:none!important;}
+
+.course_details li {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+.course_details li i {
+    float: right;
+    font-size: 16px;
+    line-height: 1;
+    margin-right: 10px;
+    font-style: normal;
+}
+.valor-reais {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4c7420;
+    border: dotted 1px #828282;
+    padding: 10px;
+    margin: 30px auto 0;
+}
+.valor-reais-date {
+    display: inline-block;
+    text-align: left;
+    color: #737373;
+}
+.valor-reais-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0!important;
+    font-size: 12px;
+    color: #737373;
+        list-style: none!important;
+}
+.webdoor-box-summary-payment-icons li {
+    display: inline;
+    margin-right: 7px;
+    padding: 0!important;
+    list-style: none;
+}
+#left-area > div.sidebar-loja > div.valor-reais > ul.webdoor-box-summary-payment-icons > li > img{
+	width: 35px!important;
+}
+#left-area > div.sidebar-loja > div.valor-reais > ul.webdoor-box-summary-payment-icons {
+  padding: 0!important;
+}
+#left-area > div.sidebar-loja > div > ul > li > span {
+	color: #fc630e;
+	font-weight: bold;
+}
+
+
+#left-area > div.sidebar-loja > div > h2 {
+	font-family:  'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+	border-bottom: 5px solid #EFEFEF;
+    padding: 20px 0px;
+    color: #5a5a5a;
+}
+#left-area > div.sidebar-loja > div > ul > li > a > span {
+	color: #16a085;
+}
+
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {width: 55px;}
+/********SHOP PAGE**************/
+#left-area > ul > li.product.type-product.status-publish.has-post-thumbnail.sale.virtual.sold-individually.shipping-taxable.purchasable.product-type-simple.instock {
+	width: 100%;
+}
+#left-area > ul > li.product.type-product.status-publish.has-post-thumbnail.virtual.sold-individually.shipping-taxable.purchasable.product-type-simple.instock {
+	width: 48%;
+}
+#left-area > ul > li.product.type-product.status-publish.has-post-thumbnail.virtual.sold-individually.shipping-taxable.purchasable.product-type-simple.instock > a > div > div > ul > li {
+	font-size: 10px;
+}
